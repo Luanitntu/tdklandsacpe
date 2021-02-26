@@ -1,0 +1,26 @@
+%bg-title {
+    background: url(../images/bg-title-page.png) no-repeat;
+    background-position: center center;
+    padding: 31px 0;
+}
+
+%before-title {
+    content: '';
+    width: 140px;
+    height: 17px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00996d;
+    position: absolute;
+}
+
+%before-title-item {
+    content: '';
+    width: 80px;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+    background: #00996d;
+    position: absolute;
+}

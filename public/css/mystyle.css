@@ -1,0 +1,1112 @@
+@font-face {
+    font-family: 'Amasis MT Md';
+    src: url("../fonts/AmasisMT.eot");
+    src: url("../fonts/AmasisMT.eot?#iefix") format("embedded-opentype"), url("../fonts/AmasisMT.woff2") format("woff2"), url("../fonts/AmasisMT.woff") format("woff"), url("../fonts/AmasisMT.ttf") format("truetype"), url("../fonts/AmasisMT.svg#AmasisMT") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+  src: url("../fonts/NexaLight.eot");
+  src: url("../fonts/NexaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/NexaLight.woff2") format("woff2"), url("../fonts/NexaLight.woff") format("woff"), url("../fonts/NexaLight.ttf") format("truetype"), url("../fonts/NexaLight.svg#NexaLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Bold';
+  src: url("../fonts/NexaBold.eot");
+  src: url("../fonts/NexaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NexaBold.woff2") format("woff2"), url("../fonts/NexaBold.woff") format("woff"), url("../fonts/NexaBold.ttf") format("truetype"), url("../fonts/NexaBold.svg#NexaBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media (min-width: 1200px) {
+    .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+        max-width: 1260px;
+    }
+}
+
+#page-services .services__content .services__content--title h2, #page-gallery .gallery__content .gallery__content--title h2 {
+    background: url(../images/bg-title-page.png) no-repeat;
+    background-position: center center;
+    padding: 31px 0;
+}
+
+#page-services .services__content .services__content--title h2:before, #page-gallery .gallery__content .gallery__content--title h2:before {
+    content: '';
+    width: 140px;
+    height: 17px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00996d;
+    position: absolute;
+}
+
+#page-services .services__content .services__content--wrap .services__item .services__item--title h2:before {
+    content: '';
+    width: 80px;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+    background: #00996d;
+    position: absolute;
+}
+
+#header-page .sticky .wrap__menu--top {
+    background: #123a35;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding: 4px 405px 4px 0;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--phone {
+    margin-right: 70px;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--phone,
+  #header-page .sticky .wrap__menu--top .menu__top--email {
+    display: flex;
+    align-items: center;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--phone p,
+    #header-page .sticky .wrap__menu--top .menu__top--email p {
+    font-size: 18px;
+    font-family: "Nexa Bold";
+    color: #00996d;
+    text-transform: uppercase;
+    line-height: 3.333;
+    margin-bottom: 0;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--phone a,
+    #header-page .sticky .wrap__menu--top .menu__top--email a {
+    font-size: 18px;
+    font-family: "Nexa Light";
+    color: #ffffff;
+    line-height: 3.333;
+    text-decoration: none;
+    margin-left: 5px;
+    transition: all linear .2s;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--phone a:hover,
+      #header-page .sticky .wrap__menu--top .menu__top--email a:hover {
+    color: #00996d;
+    transition: all linear .2s;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--free {
+    position: absolute;
+    top: 0;
+    right: 170px;
+    z-index: 99;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--free a {
+    background: #00996d;
+    display: inline-block;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    padding: 55px 30px 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--free a h2 {
+    font-size: 39px;
+    font-family: "Nexa Bold";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--free a p {
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    color: #101f26;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+#header-page .sticky .wrap__menu--top .menu__top--free a:before {
+    content: '';
+    width: 45px;
+    height: 25px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../images/before-estimate.png") no-repeat;
+    position: absolute;
+}
+
+#header-page .sticky .wrap__menu .wrap__menu--bottom {
+    display: flex;
+    padding: 19px 405px 0 172px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+}
+
+#header-page .sticky .wrap__menu .wrap__menu--bottom .menu__bottom--main {
+    margin-top: -20px;
+}
+
+#header-page .sticky .wrap__menu .wrap__menu--bottom .menu__bottom--main .navbar-sticky ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header-page .sticky .wrap__menu .wrap__menu--bottom .menu__bottom--main .navbar-sticky ul li {
+    position: relative;
+    margin: 0 10px;
+    padding: 0 15px;
+}
+
+#header-page .sticky .wrap__menu .wrap__menu--bottom .menu__bottom--main .navbar-sticky ul li a {
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    color: #fefefe;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: -0.927px 2.853px 3px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+#header-page .sticky .wrap__menu .wrap__menu--bottom .menu__bottom--main .navbar-sticky ul li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#header-page .sticky .wrap__menu .wrap__menu--bottom .menu__bottom--main .navbar-sticky ul li:before {
+    opacity: 0;
+    content: '';
+    width: 22px;
+    height: 57px;
+    top: -15px;
+    left: 0;
+    background: #00996d;
+    position: absolute;
+    z-index: -1;
+    transition: all ease-in-out .3s;
+}
+
+#header-page .sticky .wrap__menu .wrap__menu--bottom .menu__bottom--main .navbar-sticky ul li:hover:before {
+    opacity: 1;
+    transition: all ease-in-out .3s;
+}
+
+#header-page .sticky .wrap__menu .wrap__menu--bottom .navbar-button {
+    display: none;
+}
+
+#header-page .banner-slide {
+    margin-top: -129px;
+}
+
+#header-page .banner-slide .flexslider .slide__img img.desktop {
+    display: block;
+}
+
+#header-page .banner-slide .flexslider .slide__img img.mobile {
+    display: none;
+}
+
+#header-page .banner-slide .flexslider .slide__text {
+    position: absolute;
+    top: 54%;
+    left: 345px;
+    transform: translateY(-50%);
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text-img {
+    display: flex;
+    align-items: center;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text-img img {
+    width: auto;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text-img .text {
+    margin-left: 15px;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text-img .text h4 {
+    font-size: 40px;
+    font-family: "Amasis MT Md";
+    color: #fefefe;
+    line-height: 1;
+    text-shadow: -0.927px 2.853px 3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0px;
+    margin-top: -5px;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text-img .text h2 {
+    font-size: 75px;
+    font-family: "Amasis MT Md";
+    color: #fefefe;
+    line-height: 1;
+    text-shadow: -0.927px 2.853px 3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0;
+    position: relative;
+    top: 5px;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text--sub {
+    width: 58%;
+    margin-left: auto;
+    margin-right: 0;
+    right: -8px;
+    position: relative;
+    margin-top: 50px;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text--sub p {
+    font-size: 25px;
+    font-family: "Nexa Light";
+    color: #fefefe;
+    line-height: 1.2;
+    text-align: left;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text--services {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    position: relative;
+    top: 20px;
+    left: 22px;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text--services a {
+    font-size: 24px;
+    font-family: "Amasis MT Md";
+    color: #00996d;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px 37px;
+    position: relative;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text--services a:before {
+    content: '';
+    width: 75%;
+    height: 120%;
+    top: -10%;
+    left: 50%;
+    background: #00996d;
+    border: 2px solid #ffffff;
+    position: absolute;
+    z-index: -1;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text--services a:after {
+    content: '';
+    width: 24px;
+    height: 17px;
+    top: 23px;
+    right: -50px;
+    background: url("../images/arrow-services-slide.png") no-repeat;
+    position: absolute;
+}
+
+#header-page .banner-page {
+    margin-top: -129px;
+}
+
+#header-page .banner-page img {
+    width: 100%;
+}
+
+#page-home {
+    margin-top: 78px;
+    margin-bottom: 100px;
+}
+
+#page-home .home__intro {
+    margin-bottom: 158px;
+}
+
+#page-home .home__intro .home__intro--title h2 {
+    padding: 33px 0;
+    font-size: 48px;
+    font-family: "Nexa Bold";
+    color: #00996d;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: right;
+    background: url(../images/bg-title-intro.png) no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+#page-home .home__intro .home__intro--title h2:before {
+    content: '';
+    width: 140px;
+    height: 20px;
+    bottom: 0;
+    right: 0;
+    background: #00996d;
+    position: absolute;
+}
+
+#page-home .home__intro .home__intro--content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 71px;
+}
+
+#page-home .home__intro .home__intro--content .intro__content--left {
+    width: 30%;
+}
+
+#page-home .home__intro .home__intro--content .intro__content--left p {
+    font-size: 24px;
+    font-family: "Nexa Light";
+    color: #242424;
+    text-transform: uppercase;
+    line-height: 1.25;
+    margin-bottom: 5px;
+}
+
+#page-home .home__intro .home__intro--content .intro__content--left h2 {
+    font-size: 50px;
+    font-family: "Amasis MT Md";
+    color: #00996d;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+#page-home .home__intro .home__intro--content .intro__content--right {
+    width: 57%;
+}
+
+#page-home .home__intro .home__intro--content .intro__content--right p {
+    font-size: 17px;
+    font-family: "Nexa Light";
+    color: #242424;
+    line-height: 1.529;
+}
+
+#page-home .home__intro .home__intro--slide {
+    margin-top: 73px;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item {
+    width: 30%;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--order h2 {
+    font-size: 70px;
+    font-family: "Nexa Bold";
+    color: #242424;
+    line-height: 1;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content {
+    padding-left: 50px;
+    position: relative;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content:before {
+    content: '';
+    width: 22px;
+    height: 112px;
+    top: 0;
+    left: 0;
+    background: #00996d;
+    position: absolute;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content .item__title h4 {
+    font-size: 30px;
+    font-family: "Nexa Bold";
+    color: #242424;
+    text-transform: uppercase;
+    line-height: 0.867;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content .item__content {
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content .item__content p {
+    font-size: 17px;
+    font-family: "Nexa Light";
+    color: #242424;
+    line-height: 1.529;
+    margin-bottom: 0;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item.slick-current.slick-center {
+    margin-top: 143px;
+}
+
+#page-home .home__intro .home__intro--slide .services__btn {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+    margin: 0 auto;
+    left: 49.5%;
+    transform: translateX(-50%);
+}
+
+#page-home .home__intro .home__intro--slide a {
+    width: 86px;
+    height: 86px;
+    border: 2px solid #00996d;
+    position: relative;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+#page-home .home__intro .home__intro--slide a.btn-prev:before {
+    content: '';
+    width: 23px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../images/arrow-prev.png") no-repeat;
+    position: absolute;
+}
+
+#page-home .home__intro .home__intro--slide a.btn-prev:hover {
+    background: #00996d;
+    transition: all linear .3s;
+}
+
+#page-home .home__intro .home__intro--slide a.btn-prev:hover:before {
+    background: url("../images/arrow-prev-hover.png") no-repeat;
+}
+
+#page-home .home__intro .home__intro--slide a.btn-next:before {
+    content: '';
+    width: 23px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../images/arrow-next.png") no-repeat;
+    position: absolute;
+}
+
+#page-home .home__intro .home__intro--slide a.btn-next:hover {
+    background: #00996d;
+    transition: all linear .3s;
+}
+
+#page-home .home__intro .home__intro--slide a.btn-next:hover:before {
+    background: url("../images/arrow-next-hover.png") no-repeat;
+}
+
+#page-home .home__welcome {
+    background: #255852;
+    padding: 102px 0 130px;
+}
+
+#page-home .home__welcome .home__welcome--content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--left {
+    width: 32%;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--left .content__left--title p {
+    font-size: 24px;
+    font-family: "Nexa Light";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.25;
+    margin-bottom: 5px;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--left .content__left--title h2 {
+    font-size: 89px;
+    font-family: "Amasis MT Md";
+    color: #00996d;
+    line-height: 1;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--left .content__left--title h4 {
+    font-size: 50px;
+    font-family: "Amasis MT Md";
+    color: #00996d;
+    line-height: 1;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--left .content__left--img {
+    margin-top: 85px;
+    position: relative;
+    text-align: center;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--left .content__left--img .left__img--title {
+    border: 6px solid #00996d;
+    display: inline-block;
+    padding: 38px 42px 31px;
+    position: relative;
+    z-index: 2;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--left .content__left--img .left__img--title h4 {
+    font-size: 52px;
+    font-family: "Nexa Bold";
+    color: #ffffff;
+    line-height: 0.827;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 25px;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--left .content__left--img .left__img--title p {
+    font-size: 30px;
+    font-family: "Nexa Bold";
+    color: #ffffff;
+    line-height: 0.827;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--left .content__left--img .left__img--image {
+    position: absolute;
+    z-index: 1;
+    top: 102px;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right {
+    width: 68%;
+    padding-left: 130px;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .content__right--qoute h3 {
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.3;
+    position: relative;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .content__right--qoute h3:before {
+    content: '';
+    width: 49px;
+    height: 42px;
+    top: 3px;
+    left: -62px;
+    background: url("../images/before-qoute.png") no-repeat;
+    position: absolute;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .content__right--qoute p {
+    font-size: 17px;
+    font-family: "Nexa Light";
+    color: #ffffff;
+    line-height: 2.118;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .content__right--text {
+    margin-top: 30px;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .content__right--text p {
+    font-size: 17px;
+    font-family: "Nexa Light";
+    color: #ffffff;
+    line-height: 1.529;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .welcome__content--link {
+    margin-top: 90px;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .welcome__content--link a {
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding: 18px 22px;
+    background: #00996d;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .welcome__content--link a::before {
+    content: '';
+    width: 70%;
+    height: 120%;
+    top: -10%;
+    left: 52%;
+    border: 2px solid #00996d;
+    position: absolute;
+    z-index: -1;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .welcome__content--link a::after {
+    content: '';
+    width: 24px;
+    height: 17px;
+    top: 23px;
+    right: -47px;
+    background: url(../images/arrow-free.png) no-repeat;
+    position: absolute;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .content__left--img-mobile {
+    display: none;
+}
+
+#page-home .home__contact {
+    margin-top: 100px;
+}
+
+#page-home .home__contact .home__contact--title {
+    width: 58%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#page-home .home__contact .home__contact--title h2 {
+    font-size: 50px;
+    font-family: "Amasis MT Md";
+    color: #00996d;
+    line-height: 0.48;
+    margin-bottom: 30px;
+}
+
+#page-home .home__contact .home__contact--title p {
+    font-size: 17px;
+    font-family: "Nexa Light";
+    color: #242424;
+    line-height: 1.529;
+}
+
+#page-home .home__contact .home__contact--form {
+    margin-top: 60px;
+}
+
+#page-home .home__contact .home__contact--form .form--input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#page-home .home__contact .home__contact--form .form--input .input-w30 {
+    width: 32%;
+}
+
+#page-home .home__contact .home__contact--form .form--input input[type="text"],
+        #page-home .home__contact .home__contact--form .form--input input[type="tel"],
+        #page-home .home__contact .home__contact--form .form--input input[type="email"] {
+    width: 100%;
+    font-size: 16px;
+    font-family: "Nexa Light";
+    color: #7f7f7f;
+    line-height: 2;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: #ffffff;
+    outline: none;
+    padding: 10px;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#page-home .home__contact .home__contact--form .form--input input::placeholder {
+    font-size: 16px;
+    font-family: "Nexa Light";
+    color: #7f7f7f;
+    opacity: 1;
+}
+
+#page-home .home__contact .home__contact--form .form--select {
+    margin-top: 40px;
+}
+
+#page-home .home__contact .home__contact--form .form--select h4 {
+    font-size: 18px;
+    font-family: "Nexa Bold";
+    color: #242424;
+    text-transform: uppercase;
+    line-height: 1.444;
+}
+
+#page-home .home__contact .home__contact--form .form--select input[type="text"] {
+    width: 100%;
+    font-size: 16px;
+    font-family: "Nexa Light";
+    color: #7f7f7f;
+    line-height: 2;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: #ffffff;
+    outline: none;
+    padding: 10px;
+}
+
+#page-home .home__contact .home__contact--form .form--select input[type="checkbox"] {
+    font-size: 17px;
+    font-family: "Nexa Light";
+    color: #242424;
+    text-transform: uppercase;
+    line-height: 1.444;
+}
+
+#page-home .home__contact .home__contact--form .form--select textarea {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Nexa Light";
+    color: #7f7f7f;
+    line-height: 2;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: #ffffff;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    height: 120px;
+}
+
+#page-home .home__contact .home__contact--form .form--button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#page-home .home__contact .home__contact--form .form--button .button-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #00996d;
+    padding: 17px 40px 16px;
+    position: relative;
+    z-index: 2;
+}
+
+#page-home .home__contact .home__contact--form .form--button .button-submit:before {
+    content: '';
+    width: 90%;
+    height: 120%;
+    top: -10%;
+    left: 50%;
+    border: 2px solid #00996d;
+    position: absolute;
+    z-index: -1;
+}
+
+#page-home .home__contact .home__contact--form .form--button .button-submit:after {
+    content: '';
+    width: 22px;
+    height: 15px;
+    top: 25px;
+    right: -40px;
+    background: url("../images/arrow-contact-home.png") no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+
+#page-home .home__contact .home__contact--form .form--button .button-submit input[type="submit"] {
+    font-size: 22px;
+    font-family: "Nexa Bold";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.455;
+    border-radius: 0;
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+#page-services {
+    margin-top: 115px;
+    margin-bottom: 22%;
+}
+
+#page-services .services__content .services__content--title h2 {
+    font-size: 50px;
+    font-family: "Nexa Bold";
+    color: #00996d;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+}
+
+#page-services .services__content .services__content--wrap {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#page-services .services__content .services__content--wrap .services__item {
+    width: 32%;
+}
+
+#page-services .services__content .services__content--wrap .services__item .services__item--image img {
+    width: auto;
+}
+
+#page-services .services__content .services__content--wrap .services__item .services__item--title {
+    margin-top: 35px;
+    padding-right: 13px;
+}
+
+#page-services .services__content .services__content--wrap .services__item .services__item--title h2 {
+    font-size: 30px;
+    font-family: "Nexa Bold";
+    color: #242424;
+    text-transform: uppercase;
+    line-height: 1.2;
+    position: relative;
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+}
+
+#page-services .services__content .services__content--wrap .services__item .services__item--content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#page-services .services__content .services__content--wrap .services__item .services__item--content ul li {
+    font-size: 17px;
+    font-family: "Nexa Light";
+    color: #242424;
+    line-height: 1.882;
+}
+
+#page-gallery {
+    margin-top: 115px;
+    margin-bottom: 22%;
+}
+
+#page-gallery .gallery__content .gallery__content--title h2 {
+    font-size: 50px;
+    font-family: "Nexa Bold";
+    color: #00996d;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+}
+
+#page-gallery .gallery__content .gallery__content--wrap {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#page-gallery .gallery__content .gallery__content--wrap .gallery__item {
+    margin-bottom: 30px;
+}
+
+#page-gallery .gallery__content .gallery__content--wrap .gallery__item a {
+    display: inline-block;
+    position: relative;
+}
+
+#page-gallery .gallery__content .gallery__content--wrap .gallery__item a:hover:before {
+    content: '';
+    width: 86px;
+    height: 86px;
+    top: 30px;
+    right: -15px;
+    background: url("../images/before-zoom.jpg") no-repeat;
+    position: absolute;
+    z-index: 2;
+}
+
+#footer {
+    position: relative;
+    margin-top: 350px;
+}
+
+#footer:before {
+    content: '';
+    width: 100%;
+    height: 1070px;
+    bottom: 0;
+    left: 0;
+    background: url("../images/bg-footer.jpg") no-repeat;
+    position: absolute;
+    z-index: -1;
+}
+
+#footer .footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+#footer .footer__top .footer__top--left {
+    width: 58%;
+    padding-right: 170px;
+}
+
+#footer .footer__top .footer__top--left h3 {
+    font-size: 43px;
+    font-family: "Amasis MT Md";
+    color: #fefefe;
+    line-height: 1.116;
+    margin-bottom: 70px;
+}
+
+#footer .footer__top .footer__top--left p {
+    font-size: 30px;
+    font-family: "Nexa Light";
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 7px;
+}
+
+#footer .footer__top .footer__top--left a {
+    font-size: 30px;
+    font-family: "Nexa Bold";
+    color: #ffffff;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+#footer .footer__top .footer__top--left h4 {
+    font-size: 36px;
+    font-family: "Nexa Bold";
+    color: #00996d;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+#footer .footer__top .footer__top--mid {
+    width: 28%;
+}
+
+#footer .footer__top .footer__top--mid .info {
+    margin-bottom: 30px;
+}
+
+#footer .footer__top .footer__top--mid h4 {
+    font-size: 29px;
+    font-family: "Nexa Bold";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.034;
+    margin-bottom: 45px;
+}
+
+#footer .footer__top .footer__top--mid p {
+    font-size: 20px;
+    font-family: "Nexa Bold";
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#footer .footer__top .footer__top--mid a {
+    font-size: 20px;
+    font-family: "Nexa Light";
+    color: #ffffff;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+#footer .footer__top .footer__top--right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer__top .footer__top--right ul li a {
+    font-size: 20px;
+    font-family: "Nexa Light";
+    color: #ffffff;
+    line-height: 2.8;
+    text-shadow: -0.309px 0.951px 5px rgba(0, 0, 0, 0.96);
+    display: flex;
+    text-decoration: none;
+}
+
+#footer .footer__top .footer__top--right ul li a p {
+    margin-bottom: 0;
+}
+
+#footer .footer__top .footer__top--right ul li i {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-top: 2px solid #ffffff;
+}
+
+#footer .footer__bottom .footer__bottom--left p {
+    font-size: 18px;
+    font-family: "Nexa Light";
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+#footer .footer__bottom .footer__bottom--right p,
+    #footer .footer__bottom .footer__bottom--right a {
+    font-size: 18px;
+    font-family: "Nexa Light";
+    color: #ffffff;
+    line-height: 1.2;
+    text-decoration: none;
+    margin-bottom: 0;
+}

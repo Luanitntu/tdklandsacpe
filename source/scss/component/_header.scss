@@ -1,0 +1,250 @@
+#header-page {
+    .sticky {
+        .wrap__menu {
+            &--top {
+                background: #123a35;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                position: relative;
+                padding: 4px 405px 4px 0;
+                .menu__top--phone {
+                    margin-right: 70px;
+                    ;
+                }
+                .menu__top--phone,
+                .menu__top--email {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        font-size: 18px;
+                        font-family: "Nexa Bold";
+                        color: #00996d;
+                        text-transform: uppercase;
+                        line-height: 3.333;
+                        margin-bottom: 0;
+                    }
+                    a {
+                        font-size: 18px;
+                        font-family: "Nexa Light";
+                        color: #ffffff;
+                        line-height: 3.333;
+                        text-decoration: none;
+                        margin-left: 5px;
+                        transition: all linear .2s;
+                        &:hover {
+                            color: #00996d;
+                            transition: all linear .2s;
+                        }
+                    }
+                }
+                .menu__top--free {
+                    position: absolute;
+                    top: 0;
+                    right: 170px;
+                    z-index: 99;
+                    a {
+                        background: #00996d;
+                        display: inline-block;
+                        border-bottom-left-radius: 26px;
+                        border-bottom-right-radius: 26px;
+                        padding: 55px 30px 10px;
+                        position: relative;
+                        text-decoration: none;
+                        h2 {
+                            font-size: 39px;
+                            font-family: "Nexa Bold";
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            line-height: 1.2;
+                            text-align: right;
+                            margin-bottom: 0;
+                        }
+                        p {
+                            font-size: 20px;
+                            font-family: "Nexa Bold";
+                            color: #101f26;
+                            text-transform: uppercase;
+                            line-height: 1.5;
+                            margin-bottom: 0;
+                        }
+                        &:before {
+                            content: '';
+                            width: 45px;
+                            height: 25px;
+                            top: 20px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background: url('../images/before-estimate.png')no-repeat;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+            .wrap__menu--bottom {
+                display: flex;
+                padding: 19px 405px 0 172px;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                z-index: 9;
+                .menu__bottom--main {
+                    margin-top: -20px;
+                    .navbar-sticky {
+                        ul {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            li {
+                                position: relative;
+                                margin: 0 10px;
+                                padding: 0 15px;
+                                a {
+                                    font-size: 20px;
+                                    font-family: "Nexa Bold";
+                                    color: #fefefe;
+                                    text-transform: uppercase;
+                                    line-height: 1;
+                                    text-shadow: -0.927px 2.853px 3px rgba(0, 0, 0, 0.25);
+                                    text-decoration: none;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                    padding-right: 0;
+                                }
+                                &:before {
+                                    opacity: 0;
+                                    content: '';
+                                    width: 22px;
+                                    height: 57px;
+                                    top: -15px;
+                                    left: 0;
+                                    background: #00996d;
+                                    position: absolute;
+                                    z-index: -1;
+                                    transition: all ease-in-out .3s;
+                                }
+                                &:hover:before {
+                                    opacity: 1;
+                                    transition: all ease-in-out .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+                .navbar-button {
+                    display: none;
+                }
+            }
+        }
+    }
+    .banner-slide {
+        margin-top: -129px;
+        .flexslider {
+            .slide__img {
+                img.desktop {
+                    display: block;
+                }
+                img.mobile {
+                    display: none;
+                }
+            }
+            .slide__text {
+                position: absolute;
+                top: 54%;
+                left: 345px;
+                transform: translateY(-50%);
+                .slide__text-img {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: auto;
+                    }
+                    .text {
+                        margin-left: 15px;
+                        h4 {
+                            font-size: 40px;
+                            font-family: "Amasis MT Md";
+                            color: #fefefe;
+                            line-height: 1;
+                            text-shadow: -0.927px 2.853px 3px rgba(0, 0, 0, 0.25);
+                            margin-bottom: 0px;
+                            margin-top: -5px;
+                        }
+                        h2 {
+                            font-size: 75px;
+                            font-family: "Amasis MT Md";
+                            color: #fefefe;
+                            line-height: 1;
+                            text-shadow: -0.927px 2.853px 3px rgba(0, 0, 0, 0.25);
+                            margin-bottom: 0;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                }
+                .slide__text--sub {
+                    width: 58%;
+                    margin-left: auto;
+                    margin-right: 0;
+                    right: -8px;
+                    position: relative;
+                    margin-top: 50px;
+                    p {
+                        font-size: 25px;
+                        font-family: "Nexa Light";
+                        color: #fefefe;
+                        line-height: 1.2;
+                        text-align: left;
+                    }
+                }
+                .slide__text--services {
+                    text-align: right;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 100px;
+                    position: relative;
+                    top: 20px;
+                    left: 22px;
+                    a {
+                        font-size: 24px;
+                        font-family: "Amasis MT Md";
+                        color: #00996d;
+                        line-height: 1;
+                        text-align: center;
+                        text-decoration: none;
+                        background: #ffffff;
+                        padding: 20px 37px;
+                        position: relative;
+                        &:before {
+                            content: '';
+                            width: 75%;
+                            height: 120%;
+                            top: -10%;
+                            left: 50%;
+                            background: #00996d;
+                            border: 2px solid #ffffff;
+                            position: absolute;
+                            z-index: -1;
+                        }
+                        &:after {
+                            content: '';
+                            width: 24px;
+                            height: 17px;
+                            top: 23px;
+                            right: -50px;
+                            background: url('../images/arrow-services-slide.png')no-repeat;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner-page {
+        margin-top: -129px;
+        img {
+            width: 100%;
+        }
+    }
+}

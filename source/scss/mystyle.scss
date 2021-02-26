@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Amasis MT Md';
+    src: url('../fonts/AmasisMT.eot');
+    src: url('../fonts/AmasisMT.eot?#iefix') format('embedded-opentype'), url('../fonts/AmasisMT.woff2') format('woff2'), url('../fonts/AmasisMT.woff') format('woff'), url('../fonts/AmasisMT.ttf') format('truetype'), url('../fonts/AmasisMT.svg#AmasisMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('../fonts/NexaLight.eot');
+    src: url('../fonts/NexaLight.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaLight.woff2') format('woff2'), url('../fonts/NexaLight.woff') format('woff'), url('../fonts/NexaLight.ttf') format('truetype'), url('../fonts/NexaLight.svg#NexaLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('../fonts/NexaBold.eot');
+    src: url('../fonts/NexaBold.eot?#iefix') format('embedded-opentype'), url('../fonts/NexaBold.woff2') format('woff2'), url('../fonts/NexaBold.woff') format('woff'), url('../fonts/NexaBold.ttf') format('truetype'), url('../fonts/NexaBold.svg#NexaBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1260px;
+    }
+}
+
+@import "component/mixins";
+@import "component/header";
+@import "page/home";
+@import "page/services";
+@import "page/gallery";
+@import "component/footer";
