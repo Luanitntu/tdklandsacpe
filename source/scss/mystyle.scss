@@ -26,6 +26,7 @@
 }
 
 @media (min-width: 1200px) {
+
     .container,
     .container-lg,
     .container-md,
@@ -40,4 +41,5 @@
 @import "page/home";
 @import "page/services";
 @import "page/gallery";
+@import "page/contact";
 @import "component/footer";

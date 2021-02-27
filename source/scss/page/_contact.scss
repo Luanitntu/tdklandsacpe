@@ -1,0 +1,127 @@
+#page-contact {
+    margin-top: 115px;
+    margin-bottom: 22%;
+
+    .contact__content {
+        .contact__content--title {
+            h2 {
+                font-size: 50px;
+                font-family: "Nexa Bold";
+                color: #00996d;
+                text-transform: uppercase;
+                line-height: 1;
+                text-align: center;
+                position: relative;
+                @extend %bg-title;
+
+                &:before {
+                    @extend %before-title;
+                }
+            }
+        }
+
+        .contact__content--form {
+            margin-top: 90px;
+
+            .form--main {
+                max-width: 700px;
+                margin: 0 auto;
+
+                .form-input {
+                    width: 100%;
+                    margin-bottom: 10px;
+
+                    input[type="text"],
+                    input[type="tel"],
+                    input[type="email"] {
+                        width: 100%;
+                        border: 1px solid #b7b7b7;
+                        border-radius: 0;
+                        background: #ffffff;
+                        font-size: 18px;
+                        font-family: "Nexa Light";
+                        color: #4a4a4a;
+                        line-height: 2.722;
+                        outline: none;
+                        padding-left: 15px;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        border: 1px solid #b7b7b7;
+                        border-radius: 0;
+                        background: #ffffff;
+                        font-size: 18px;
+                        font-family: "Nexa Light";
+                        color: #4a4a4a;
+                        line-height: 2.722;
+                        outline: none;
+                        padding-left: 15px;
+                        resize: none;
+                        height: 170px;
+                    }
+
+                    input::placeholder,
+                    textarea::placeholder {
+                        font-size: 18px;
+                        font-family: "Nexa Light";
+                        color: #4a4a4a;
+                        opacity: 1;
+                    }
+
+                }
+
+                .form-btn {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 60px;
+                    margin-left: -40px;
+
+                    .btn-submit {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        background: #00996d;
+                        padding: 17px 40px 16px;
+                        position: relative;
+                        z-index: 2;
+
+                        &::before {
+                            content: '';
+                            width: 90%;
+                            height: 120%;
+                            top: -10%;
+                            left: 50%;
+                            border: 2px solid #00996d;
+                            position: absolute;
+                            z-index: -1;
+                        }
+
+                        &::after {
+                            content: '';
+                            width: 22px;
+                            height: 15px;
+                            top: 25px;
+                            right: -40px;
+                            background: url(../images/arrow-contact-home.png) no-repeat;
+                            position: absolute;
+                            z-index: 1;
+                        }
+
+                        input[type="submit"] {
+                            background: none;
+                            border-radius: 0;
+                            border: 0;
+                            font-size: 22px;
+                            font-family: "Nexa Bold";
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            line-height: 1.455;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
