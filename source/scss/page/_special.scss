@@ -1,0 +1,32 @@
+#page-special {
+    margin-top: 115px;
+    margin-bottom: 22%;
+    .special__content {
+        .special__content--title {
+            h2 {
+                font-size: 50px;
+                font-family: "Nexa Bold";
+                color: #00996d;
+                text-transform: uppercase;
+                line-height: 1;
+                text-align: center;
+                position: relative;
+                @extend %bg-title;
+                &:before {
+                    @extend %before-title;
+                }
+            }
+        }
+        .special__content--content {
+            margin-top: 90px;
+            h2 {
+                font-size: 50px;
+                font-family: "Amasis MT Md";
+                color: #00996d;
+                line-height: 1.2;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+}

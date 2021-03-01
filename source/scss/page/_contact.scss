@@ -1,7 +1,6 @@
 #page-contact {
     margin-top: 115px;
     margin-bottom: 22%;
-
     .contact__content {
         .contact__content--title {
             h2 {
@@ -13,24 +12,19 @@
                 text-align: center;
                 position: relative;
                 @extend %bg-title;
-
                 &:before {
                     @extend %before-title;
                 }
             }
         }
-
         .contact__content--form {
             margin-top: 90px;
-
             .form--main {
                 max-width: 700px;
                 margin: 0 auto;
-
                 .form-input {
                     width: 100%;
                     margin-bottom: 10px;
-
                     input[type="text"],
                     input[type="tel"],
                     input[type="email"] {
@@ -44,8 +38,11 @@
                         line-height: 2.722;
                         outline: none;
                         padding-left: 15px;
+                        box-shadow: none !important;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
                     }
-
                     textarea {
                         width: 100%;
                         border: 1px solid #b7b7b7;
@@ -59,8 +56,11 @@
                         padding-left: 15px;
                         resize: none;
                         height: 170px;
+                        box-shadow: none !important;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
                     }
-
                     input::placeholder,
                     textarea::placeholder {
                         font-size: 18px;
@@ -68,15 +68,12 @@
                         color: #4a4a4a;
                         opacity: 1;
                     }
-
                 }
-
                 .form-btn {
                     display: flex;
                     justify-content: center;
                     margin-top: 60px;
                     margin-left: -40px;
-
                     .btn-submit {
                         display: flex;
                         flex-direction: column;
@@ -86,7 +83,6 @@
                         padding: 17px 40px 16px;
                         position: relative;
                         z-index: 2;
-
                         &::before {
                             content: '';
                             width: 90%;
@@ -97,7 +93,6 @@
                             position: absolute;
                             z-index: -1;
                         }
-
                         &::after {
                             content: '';
                             width: 22px;
@@ -107,8 +102,12 @@
                             background: url(../images/arrow-contact-home.png) no-repeat;
                             position: absolute;
                             z-index: 1;
+                            transition: all ease-in-out .3s;
                         }
-
+                        &:hover:after {
+                            right: -50px;
+                            transition: all ease-in-out .3s;
+                        }
                         input[type="submit"] {
                             background: none;
                             border-radius: 0;

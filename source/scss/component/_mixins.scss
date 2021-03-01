@@ -24,3 +24,12 @@
     background: #00996d;
     position: absolute;
 }
+
+@keyframes up_down {
+    0% {
+        top: 20px;
+    }
+    100% {
+        top: 30px;
+    }
+}

@@ -35,13 +35,13 @@
     }
 }
 
-#page-services .services__content .services__content--title h2, #page-gallery .gallery__content .gallery__content--title h2, #page-contact .contact__content .contact__content--title h2 {
+#page-services .services__content .services__content--title h2, #page-special .special__content .special__content--title h2, #page-gallery .gallery__content .gallery__content--title h2, #page-contact .contact__content .contact__content--title h2 {
     background: url(../images/bg-title-page.png) no-repeat;
     background-position: center center;
     padding: 31px 0;
 }
 
-#page-services .services__content .services__content--title h2:before, #page-gallery .gallery__content .gallery__content--title h2:before, #page-contact .contact__content .contact__content--title h2:before {
+#page-services .services__content .services__content--title h2:before, #page-special .special__content .special__content--title h2:before, #page-gallery .gallery__content .gallery__content--title h2:before, #page-contact .contact__content .contact__content--title h2:before {
     content: '';
     width: 140px;
     height: 17px;
@@ -60,6 +60,16 @@
     left: 0;
     background: #00996d;
     position: absolute;
+}
+
+@keyframes up_down {
+    0% {
+        top: 20px;
+    }
+
+    100% {
+        top: 30px;
+    }
 }
 
 #header-page .sticky .wrap__menu--top {
@@ -153,6 +163,7 @@
     transform: translateX(-50%);
     background: url("../images/before-estimate.png") no-repeat;
     position: absolute;
+    animation: up_down 1s infinite alternate;
 }
 
 #header-page .sticky .wrap__menu .wrap__menu--bottom {
@@ -329,6 +340,12 @@
     right: -50px;
     background: url("../images/arrow-services-slide.png") no-repeat;
     position: absolute;
+    transition: all ease-in-out .3s;
+}
+
+#header-page .banner-slide .flexslider .slide__text .slide__text--services a:hover:after {
+    right: -60px;
+    transition: all ease-in-out .3s;
 }
 
 #header-page .banner-page {
@@ -436,14 +453,8 @@
     position: relative;
 }
 
-#page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content:before {
-    content: '';
-    width: 22px;
-    height: 112px;
-    top: 0;
-    left: 0;
-    background: #00996d;
-    position: absolute;
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content .item__title {
+    position: relative;
 }
 
 #page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content .item__title h4 {
@@ -452,6 +463,16 @@
     color: #242424;
     text-transform: uppercase;
     line-height: 0.867;
+}
+
+#page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content .item__title:before {
+    content: '';
+    width: 22px;
+    height: 112px;
+    top: 0;
+    left: -45px;
+    background: #00996d;
+    position: absolute;
 }
 
 #page-home .home__intro .home__intro--slide .intro__slide--services .services__item .services__item--content .item__content {
@@ -688,6 +709,12 @@
     right: -47px;
     background: url(../images/arrow-free.png) no-repeat;
     position: absolute;
+    transition: all ease-in-out .3s;
+}
+
+#page-home .home__welcome .home__welcome--content .welcome__content--right .welcome__content--link a:hover:after {
+    right: -60px;
+    transition: all ease-in-out .3s;
 }
 
 #page-home .home__welcome .home__welcome--content .welcome__content--right .content__left--img-mobile {
@@ -847,6 +874,12 @@
     background: url("../images/arrow-contact-home.png") no-repeat;
     position: absolute;
     z-index: 1;
+    transition: all ease-in-out .3s;
+}
+
+#page-home .home__contact .home__contact--form .form--button .button-submit:hover:after {
+    right: -50px;
+    transition: all ease-in-out .3s;
 }
 
 #page-home .home__contact .home__contact--form .form--button .button-submit input[type="submit"] {
@@ -918,6 +951,34 @@
     font-family: "Nexa Light";
     color: #242424;
     line-height: 1.882;
+}
+
+#page-special {
+    margin-top: 115px;
+    margin-bottom: 22%;
+}
+
+#page-special .special__content .special__content--title h2 {
+    font-size: 50px;
+    font-family: "Nexa Bold";
+    color: #00996d;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+}
+
+#page-special .special__content .special__content--content {
+    margin-top: 90px;
+}
+
+#page-special .special__content .special__content--content h2 {
+    font-size: 50px;
+    font-family: "Amasis MT Md";
+    color: #00996d;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
 }
 
 #page-gallery {
@@ -1004,6 +1065,10 @@
     line-height: 2.722;
     outline: none;
     padding-left: 15px;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #page-contact .contact__content .contact__content--form .form--main .form-input textarea {
@@ -1019,6 +1084,10 @@
     padding-left: 15px;
     resize: none;
     height: 170px;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #page-contact .contact__content .contact__content--form .form--main .form-input input::placeholder,
@@ -1067,6 +1136,12 @@
     background: url(../images/arrow-contact-home.png) no-repeat;
     position: absolute;
     z-index: 1;
+    transition: all ease-in-out .3s;
+}
+
+#page-contact .contact__content .contact__content--form .form--main .form-btn .btn-submit:hover:after {
+    right: -50px;
+    transition: all ease-in-out .3s;
 }
 
 #page-contact .contact__content .contact__content--form .form--main .form-btn .btn-submit input[type="submit"] {
